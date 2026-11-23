@@ -1,0 +1,19 @@
+# 人脸识别项目依赖（Python 3.8，Windows 实测可用）
+# 安装前建议先升级 pip： python -m pip install -U pip
+
+# --- 数值底座（全部用 PyPI 轮子，不要和 conda 的 MKL 版混装）---
+numpy==1.24.4
+scipy==1.10.1
+scikit-image==0.21.0
+
+# --- 推理 ---
+# 只有 CPU 时把下面这行换成：onnxruntime==1.16.0
+onnxruntime-gpu==1.16.0
+insightface==0.7.3
+albumentations==1.4.18
+
+# --- 图像与界面 ---
+opencv-python==4.8.1.78
+gradio==4.44.1
+flask>=3.0.0
+tqdm>=4.65.0
